@@ -2,8 +2,10 @@ library(readr)
 library(ggplot2)
 library(dplyr)
 
+
+input_file="D:/Me/public-archivedwl-862/Homo_sapiens.gene_info"
 # Read gene information from the file and specify header is present
-gene_info <- read_tsv("D:/Me/public-archivedwl-862/Homo_sapiens.gene_info")
+gene_info <- read_tsv(input_file)
 
 # Convert the "chromosome" column to a factor with the desired order
 chromosome_order <- c("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", 
